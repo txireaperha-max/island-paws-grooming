@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Island Paws Grooming - Dog Grooming</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-Xx+QZMQ5VXEn5W/U6w2r3HcX3QYHpi+Kq6mA4IY+GBfRA9XEj+VZ6Rz1qNDr/gLZxj1E5uG2Y5yxmXK6S0R1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Quicksand', sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background: #fffaf5;
+    }
+    header {
+      background: url('https://place-puppy.com/1200x400') no-repeat center center/cover;
+      color: white;
+      text-align: center;
+      padding: 15vh 20px;
+    }
+    header h1 {
+      font-size: 6vw;
+      margin-bottom: 0.5rem;
+      color: #fff;
+      text-shadow: 2px 2px #d97b5a;
+    }
+    header p {
+      font-size: 3vw;
+      text-shadow: 1px 1px #d97b5a;
+    }
+    nav {
+      background: #d97b5a;
+      display: flex;
+      justify-content: center;
+      padding: 10px;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 5px 15px;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav a:hover { color: #fff3e6; }
+    section {
+      padding: 50px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .service-card {
+      background: #fff3e6;
+      border-radius: 10px;
+      padding: 20px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      text-align: center;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.25);
+    }
+    .service-card i {
+      color: #d97b5a;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+      box-shadow: 0 8px 15px rgba(0,0,0,0.3);
+    }
+    form input, form textarea, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      background: #d97b5a;
+      border: none;
+      font-weight: bold;
+      cursor: not-allowed;
+      color: white;
+    }
+    .testimonial {
+      background: #f0f8ff;
+      padding: 20px;
+      border-radius: 10px;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    footer {
+      background: #d97b5a;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    .btn-booking {
+      display: inline-block;
+      background: #d97b5a;
+      color: white;
+      padding: 12px 25px;
+      font-weight: bold;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .btn-booking:hover {
+      background: #f7c59f;
+      color: #333;
+      transform: scale(1.05);
+    }
+    @media (max-width: 768px) {
+      .services { grid-template-columns: 1fr; }
+      .gallery { grid-template-columns: 1fr; }
+      nav { flex-direction: column; align-items: center; }
+      nav a { margin: 10px 0; }
+      header h1 { font-size: 8vw; }
+      header p { font-size: 4vw; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Island Paws Grooming</h1>
+    <p>Professional Dog Grooming with Love & Care</p>
+    <a href="#contact" class="btn-booking">Book an Appointment</a>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimonials">Testimonials</a>
+    <a href="#location">Location</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>At Island Paws Grooming, we believe every dog deserves to look and feel their best. With years of grooming experience, we provide a safe, loving, and professional environment where your furry friends are treated like family.</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <i class="fa-solid fa-bath"></i>
+        <h3>Bath & Brush</h3>
+        <p>A refreshing wash, blow dry, and brush out.</p>
+        <p><strong>From £20</strong></p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-scissors"></i>
+        <h3>Full Groom</h3>
+        <p>Complete wash, trim, style, and nail clipping.</p>
+        <p><strong>From £40</strong></p>
+      </div>
+      <div class="service-card">
+        <i class="fa-solid fa-paw"></i>
+        <h3>Puppy Groom</h3>
+        <p>Gentle introduction for puppies with bath & tidy.</p>
+        <p><strong>From £25</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="https://place-puppy.com/300x300" alt="Dog 1" loading="lazy">
+      <img src="https://place-puppy.com/301x300" alt="Dog 2" loading="lazy">
+      <img src="https://place-puppy.com/302x300" alt="Dog 3" loading="lazy">
+      <img src="https://place-puppy.com/303x300" alt="Dog 4" loading="lazy">
+    </div>
+  </section>
+
+  <section id="testimonials">
+    <h2>Happy Clients</h2>
+    <div class="testimonial">
+      <p>“My spaniel looks amazing after every visit! She’s so well looked after.”</p>
+      <p><strong>- Sarah K.</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>“Great service and very friendly. My pug actually enjoys grooming now!”</p>
+      <p><strong>- James L.</strong></p>
+    </div>
+    <div class="testimonial">
+      <p>“Island Paws Grooming always makes my collie look stunning. Highly recommend!”</p>
+      <p><strong>- Emma R.</strong></p>
+    </div>
+  </section>
+
+  <section id="location">
+    <h2>Find Us</h2>
+    <p><strong>Address:</strong> 54 St Marys Road, PO11 9DB</p>
+    <iframe 
+      src="https://www.google.com/maps?q=54+St+Marys+Road,+PO11+9DB&output=embed" 
+      width="100%" height="400" style="border:0; border-radius: 10px;" allowfullscreen="" loading="lazy">
+    </iframe
